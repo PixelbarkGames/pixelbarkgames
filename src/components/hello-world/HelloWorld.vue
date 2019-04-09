@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{state.message}}</h1>
+    <button @click="buttonWasClicked()">Click me!</button>
   </div>
 </template>
 

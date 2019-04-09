@@ -12,4 +12,10 @@ export default class HelloWorld extends Vue {
       message: 'Hello',
     };
   }
+
+  public buttonWasClicked() {
+    this.state = {
+      message: 'World!',
+    };
+  }
 }
