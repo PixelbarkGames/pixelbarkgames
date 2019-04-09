@@ -1,6 +1,6 @@
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
-  public message: string = "Hello World!";
+  public message: string = 'Hello World!';
 }
