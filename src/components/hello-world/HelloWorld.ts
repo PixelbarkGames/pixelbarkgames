@@ -1,7 +1,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorldState from './HelloWorldState';
+import UnsplashImage from '../unsplash-image/UnsplashImage';
 
-@Component
+@Component({
+  components: {
+    UnsplashImage,
+  },
+})
 export default class HelloWorld extends Vue {
   public state: HelloWorldState;
 
