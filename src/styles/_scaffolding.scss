@@ -1,0 +1,15 @@
+@import './variables';
+@import './mixins';
+
+.container {
+  width: map_get($container-widths, 'small');
+  margin: 0 auto;
+
+  @include respond-to('medium') {
+    width: map_get($container-widths, 'medium');
+  }
+
+  @include respond-to('large') {
+    width: map_get($container-widths, 'large');
+  }
+}

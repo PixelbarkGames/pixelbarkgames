@@ -1,0 +1,33 @@
+$grey-light: #F2F2F2 !default;
+$grey: #CCCCCC !default;
+$grey-dark: #333333 !default;
+$black: #000000 !default;
+
+$font-family-paragraph: 'Comfortaa', sans-serif !default;
+$font-family-heading: 'Montserrat', sans-serif !default;
+
+$font-color-base: $grey-dark !default;
+
+$font-size-paragraph: 1.125rem !default;
+$font-size-h1: 2.3125rem !default;
+$font-size-h2: 1.8125rem !default;
+$font-size-h3: 1.4375rem !default;
+$font-size-h4: 1.125rem !default;
+
+$font-line-height-paragraph: 2.0625rem !default;
+$font-line-height-h1: 3.75rem !default;
+$font-line-height-heading: 3rem !default;
+
+$default-gutter: 1.125rem;
+
+$container-widths: (
+  'small': (90%),
+  'medium': (980px),
+  'large': (1400px)
+) !default;
+
+$responsive-breakpoints: (
+  'small': (min-width: 767px),
+  'medium': (min-width: 992px),
+  'large': (min-width: 1400px)
+) !default;

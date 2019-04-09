@@ -1,6 +1,7 @@
 <template>
-  <logo />
+  <div class="container">
+    <logo/>
+  </div>
 </template>
 
 <script lang="ts" src="./HomePage.ts"></script>
-<style scoped lang="scss" src="./HomePage.scss"></style>

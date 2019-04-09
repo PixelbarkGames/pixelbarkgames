@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:400,700');
+@import 'variables';
+
+html, body, p {
+  font-family: $font-family-paragraph;
+  font-size: $font-size-paragraph;
+  color: $font-color-base;
+  line-height: $font-line-height-paragraph;
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  font-family: $font-family-heading;
+  line-height: $font-line-height-h1;
+  padding-bottom: $font-line-height-paragraph;
+}
+
+h2, .h2 {
+  font-size: $font-size-h2;
+  font-family: $font-family-heading;
+  line-height: $font-line-height-heading;
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+  font-family: $font-family-heading;
+  line-height: $font-line-height-heading;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+  font-family: $font-family-heading;
+  font-weight: bold;
+  line-height: $font-line-height-heading;
+}
