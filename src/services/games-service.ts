@@ -1,6 +1,6 @@
 import Game from "../types/game";
 
-export class GamesService {
+export default class GamesService {
   private _games: Game[] = [
     {
       id: 'soliloquy',
@@ -10,7 +10,7 @@ export class GamesService {
       price: 'TBA',
       releaseDate: new Date('September 30 2016'),
       platforms: ['TBA'],
-      thumbnailImageUrl: '/images/soliloquy-tile.png'
+      thumbnailImageUrl: '/images/soliloquy-tile.png',
     },
     {
       id: 'neon-ultra',
@@ -20,11 +20,11 @@ export class GamesService {
       price: '$3.99',
       releaseDate: new Date('September 30 2016'),
       platforms: ['Windows', 'Mac OS', 'Linux'],
-      thumbnailImageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/528270/header.jpg?t=1475219580'
+      thumbnailImageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/528270/header.jpg?t=1475219580',
     },
-  ]
+  ];
 
-  all(): Promise<Game[]> {
+  public all(): Promise<Game[]> {
     return Promise.resolve(this._games);
   }
 }

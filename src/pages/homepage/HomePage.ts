@@ -1,6 +1,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Logo from '../../components/logo/Logo';
 import GamesList from '../../components/games-list/GamesList';
+import GameService from '../../services/games-service';
+import Game from '../../types/game';
 
 @Component({
   components: {
@@ -9,4 +11,10 @@ import GamesList from '../../components/games-list/GamesList';
   },
 })
 export default class Homepage extends Vue {
+  public games: Game[] = [];
+
+  public mounted() {
+    const gameService = new GameService();
+    gameService.all().then(games => console.log(games));
+  }
 }
