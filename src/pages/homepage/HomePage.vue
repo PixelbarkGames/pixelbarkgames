@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <logo/>
-    <gamesList />
+    <gamesList v-bind:games="games" />
   </div>
 </template>
 

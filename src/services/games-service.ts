@@ -1,7 +1,7 @@
-import Game from "../types/game";
+import Game from '../types/game';
 
 export default class GamesService {
-  private _games: Game[] = [
+  private games: Game[] = [
     {
       id: 'soliloquy',
       title: 'Soliloquy',
@@ -25,6 +25,6 @@ export default class GamesService {
   ];
 
   public all(): Promise<Game[]> {
-    return Promise.resolve(this._games);
+    return Promise.resolve(this.games);
   }
 }

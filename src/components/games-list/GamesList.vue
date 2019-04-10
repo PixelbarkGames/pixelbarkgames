@@ -1,6 +1,8 @@
 <template>
   <div>
-    Games list works!
+      <div v-for="game in games" v-bind:key="game.id">
+        <p>{{game.title}}</p>
+      </div>
   </div>
 </template>
 

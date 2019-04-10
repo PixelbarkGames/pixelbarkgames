@@ -7,7 +7,7 @@ import Game from '../../types/game';
 @Component({
   components: {
     Logo,
-    GamesList
+    GamesList,
   },
 })
 export default class Homepage extends Vue {
@@ -15,6 +15,7 @@ export default class Homepage extends Vue {
 
   public mounted() {
     const gameService = new GameService();
-    gameService.all().then(games => console.log(games));
+    gameService.all()
+      .then((games) => this.games = games);
   }
 }
