@@ -4,5 +4,7 @@ node_js:
 script:
   - yarn
   - yarn build
-after_success:
-  - firebase deploy --token "$FIREBASE_TOKEN"
+deploy:
+  provider: firebase
+  token:
+    secure: "FIREBASE_TOKEN"
