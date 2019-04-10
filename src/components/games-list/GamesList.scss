@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond-to('medium') {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    a {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: FadeIn 350ms forwards cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+        &:nth-child(2) {
+            animation-delay: 100ms;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes FadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

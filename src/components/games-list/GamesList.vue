@@ -1,9 +1,9 @@
 <template>
-  <div>
-      <div v-for="game in games" v-bind:key="game.id">
-        <p>{{game.title}}</p>
-      </div>
-  </div>
+  <section>
+    <a v-for="game in games" v-bind:key="game.id">
+      <img v-bind:src="game.thumbnailImageUrl" v-bind:alt="game.title">
+    </a>
+  </section>
 </template>
 
 <script lang="ts" src="./GamesList.ts"></script>
