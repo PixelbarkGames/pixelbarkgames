@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PixelbarkGames/pixelbarkgames.svg?branch=master)](https://travis-ci.org/PixelbarkGames/pixelbarkgames)
+
 # pixelbarkgames
 
 ## Project setup
