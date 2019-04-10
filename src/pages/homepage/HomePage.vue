@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <logo/>
+    <gamesList />
   </div>
 </template>
 
