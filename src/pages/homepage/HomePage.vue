@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <p>testing CI</p>
     <logo/>
     <gamesList v-bind:games="games" />
   </div>
